@@ -1,0 +1,6 @@
+python-telegram-bot[job-queue]>=22.0
+matplotlib>=3.0
+numpy>=1.25
+openpyxl>=3.0
+fpdf2>=2.8
+pillow>=9

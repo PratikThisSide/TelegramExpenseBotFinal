@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-expense-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    plan: free
+    disk:
+      name: data
+      mountPath: /data
+      sizeGB: 1
