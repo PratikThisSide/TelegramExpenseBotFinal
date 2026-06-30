@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner.svg" alt="Project Under Development" width="100%">
+</p>
+
 # Telegram Personal Expense Tracker Bot
 
 A feature-rich Telegram bot for tracking personal expenses with interactive menus, charts, budgets, achievements, reminders, and more.
