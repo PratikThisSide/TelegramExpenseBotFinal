@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.svg" alt="Project Under Development" width="100%">
+  <img src="banner TELE.svg" alt="Project Under Development" width="100%">
 </p>
 
 # Telegram Personal Expense Tracker Bot
