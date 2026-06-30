@@ -1,0 +1,157 @@
+<svg width="1600" height="500" viewBox="0 0 1600 500" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#0d1117"/>
+    <stop offset="50%" stop-color="#101826"/>
+    <stop offset="100%" stop-color="#0d1117"/>
+  </linearGradient>
+  <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#229ED9"/>
+    <stop offset="50%" stop-color="#2ecc71"/>
+    <stop offset="100%" stop-color="#5be9ff"/>
+    <animate attributeName="x1" values="0%;100%;0%" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="100%;200%;100%" dur="6s" repeatCount="indefinite"/>
+  </linearGradient>
+  <radialGradient id="blob1" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#229ED9" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#229ED9" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="blob2" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#2ecc71" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#2ecc71" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#161b22" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#10151c" stop-opacity="0.9"/>
+  </linearGradient>
+  <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#229ED9"/>
+    <stop offset="100%" stop-color="#2ecc71"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f2733" stroke-width="0.5"/>
+  </pattern>
+</defs>
+
+<rect width="1600" height="500" rx="20" fill="url(#bgGrad)"/>
+<rect width="1600" height="500" rx="20" fill="url(#grid)" opacity="0.5"/>
+<rect x="3" y="3" width="1594" height="494" rx="18" fill="none" stroke="url(#borderGrad)" stroke-width="3" filter="url(#glow)"/>
+
+<circle cx="220" cy="120" r="120" fill="url(#blob1)"><animate attributeName="cy" values="120;150;120" dur="9s" repeatCount="indefinite"/></circle>
+<circle cx="1400" cy="380" r="140" fill="url(#blob2)"><animate attributeName="cy" values="380;350;380" dur="11s" repeatCount="indefinite"/></circle>
+
+<g font-family="Consolas,monospace" font-size="20" opacity="0.5">
+  <text x="60" y="40">💰<animateMotion path="M0,0 q20,-15 0,-30 q-20,-15 0,-30" dur="10s" repeatCount="indefinite"/></text>
+  <text x="1540" y="55">📈<animateMotion path="M0,0 q-15,20 0,40 q15,20 0,40" dur="12s" repeatCount="indefinite"/></text>
+  <text x="1500" y="160">📊<animateMotion path="M0,0 q20,15 0,30 q-20,15 0,30" dur="9s" repeatCount="indefinite"/></text>
+  <text x="40" y="430">🏆<animateMotion path="M0,0 q15,-20 0,-40 q-15,-20 0,-40" dur="13s" repeatCount="indefinite"/></text>
+  <text x="780" y="30">🎯<animateMotion path="M0,0 q25,10 0,20 q-25,10 0,20" dur="8s" repeatCount="indefinite"/></text>
+  <text x="1560" y="460">💳<animateMotion path="M0,0 q-20,-10 0,-20 q20,-10 0,-20" dur="10s" repeatCount="indefinite"/></text>
+  <text x="20" y="250">📅<animateMotion path="M0,0 q15,15 0,30 q-15,15 0,30" dur="11s" repeatCount="indefinite"/></text>
+  <text x="900" y="470">☕<animateMotion path="M0,0 q-15,-15 0,-30 q15,-15 0,-30" dur="9s" repeatCount="indefinite"/></text>
+</g>
+
+<g>
+  <circle cx="300" cy="60" r="1.6" fill="#5be9ff"><animate attributeName="cy" values="60;0;60" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="7s" repeatCount="indefinite"/></circle>
+  <circle cx="900" cy="80" r="1.6" fill="#229ED9"><animate attributeName="cy" values="80;20;80" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="8s" repeatCount="indefinite"/></circle>
+  <circle cx="1200" cy="50" r="1.6" fill="#2ecc71"><animate attributeName="cy" values="50;0;50" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="6s" repeatCount="indefinite"/></circle>
+</g>
+
+<text x="800" y="42" text-anchor="middle" font-family="Consolas,monospace" font-size="30" font-weight="700" fill="#f0f6fc">🤖 Telegram Personal Expense Tracker Bot</text>
+<text x="800" y="64" text-anchor="middle" font-family="Consolas,monospace" font-size="13" fill="#8b949e">Track every expense. Visualize your spending. Achieve your savings goals.</text>
+
+<g>
+  <rect x="60" y="85" width="270" height="300" rx="26" fill="#0a0e14" stroke="#229ED9" stroke-width="2" filter="url(#glow)"/>
+  <rect x="73" y="103" width="244" height="248" rx="10" fill="#131b24"/>
+  <rect x="73" y="103" width="244" height="32" fill="#1b2733"/>
+  <circle cx="90" cy="119" r="9" fill="#229ED9"/>
+  <text x="105" y="123" font-family="Consolas,monospace" font-size="10.5" fill="#e6edf3">Expense Bot</text>
+
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="0.4s" dur="0.6s" fill="freeze"/>
+    <rect x="155" y="148" width="150" height="30" rx="9" fill="#229ED9"/>
+    <text x="165" y="167" font-family="Consolas,monospace" font-size="10" fill="#ffffff">Spent ₹250 on Pizza 🍕</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="1.0s" dur="0.6s" fill="freeze"/>
+    <rect x="82" y="188" width="145" height="26" rx="9" fill="#1f2a36"/>
+    <text x="91" y="205" font-family="Consolas,monospace" font-size="10" fill="#2ecc71">✅ Expense added</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="1.6s" dur="0.6s" fill="freeze"/>
+    <rect x="82" y="222" width="145" height="26" rx="9" fill="#1f2a36"/>
+    <text x="91" y="239" font-family="Consolas,monospace" font-size="10" fill="#e6edf3">🍕 Category: Food</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="2.2s" dur="0.6s" fill="freeze"/>
+    <rect x="82" y="256" width="165" height="26" rx="9" fill="#1f2a36"/>
+    <text x="91" y="273" font-family="Consolas,monospace" font-size="10" fill="#e6edf3">Today's total: ₹1,420</text>
+  </g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" begin="2.8s" dur="0.6s" fill="freeze"/>
+    <rect x="82" y="290" width="200" height="26" rx="9" fill="#1f2a36"/>
+    <text x="91" y="307" font-family="Consolas,monospace" font-size="10" fill="#f0b429">📊 Budget used: 68%</text>
+  </g>
+</g>
+
+<g font-family="Consolas,monospace">
+  <g><rect x="365" y="85" width="215" height="72" rx="14" fill="url(#cardGrad)" stroke="#229ED9" stroke-opacity="0.5"><animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/></rect>
+    <text x="382" y="108" font-size="11" fill="#8b949e">Today's spending</text>
+    <text x="382" y="135" font-size="20" font-weight="700" fill="#5be9ff">₹1,420</text></g>
+  <g><rect x="595" y="85" width="215" height="72" rx="14" fill="url(#cardGrad)" stroke="#2ecc71" stroke-opacity="0.5"><animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="3.4s" repeatCount="indefinite"/></rect>
+    <text x="612" y="108" font-size="11" fill="#8b949e">Monthly spending</text>
+    <text x="612" y="135" font-size="20" font-weight="700" fill="#2ecc71">₹28,940</text></g>
+  <g><rect x="825" y="85" width="215" height="72" rx="14" fill="url(#cardGrad)" stroke="#f0b429" stroke-opacity="0.5"><animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="2.8s" repeatCount="indefinite"/></rect>
+    <text x="842" y="108" font-size="11" fill="#8b949e">Budget progress</text>
+    <text x="842" y="135" font-size="20" font-weight="700" fill="#f0b429">68%</text></g>
+  <g><rect x="1055" y="85" width="215" height="72" rx="14" fill="url(#cardGrad)" stroke="#e8534f" stroke-opacity="0.5"><animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="3.2s" repeatCount="indefinite"/></rect>
+    <text x="1072" y="108" font-size="11" fill="#8b949e">Current streak</text>
+    <text x="1072" y="135" font-size="20" font-weight="700" fill="#e8534f">14 days 🔥</text></g>
+
+  <g><rect x="365" y="170" width="215" height="72" rx="14" fill="url(#cardGrad)" stroke="#a78bfa" stroke-opacity="0.5"><animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="3.6s" repeatCount="indefinite"/></rect>
+    <text x="382" y="193" font-size="11" fill="#8b949e">XP level</text>
+    <text x="382" y="220" font-size="20" font-weight="700" fill="#a78bfa">Lvl 12</text></g>
+  <g><rect x="595" y="170" width="215" height="72" rx="14" fill="url(#cardGrad)" stroke="#229ED9" stroke-opacity="0.5"><animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="3.1s" repeatCount="indefinite"/></rect>
+    <text x="612" y="193" font-size="11" fill="#8b949e">Savings goal</text>
+    <text x="612" y="220" font-size="20" font-weight="700" fill="#5be9ff">₹40,000</text></g>
+  <g><rect x="825" y="170" width="215" height="72" rx="14" fill="url(#cardGrad)" stroke="#2ecc71" stroke-opacity="0.5"><animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="2.9s" repeatCount="indefinite"/></rect>
+    <text x="842" y="193" font-size="11" fill="#8b949e">Achievements</text>
+    <text x="842" y="220" font-size="20" font-weight="700" fill="#2ecc71">9 / 20 🏆</text></g>
+  <g><rect x="1055" y="170" width="215" height="72" rx="14" fill="url(#cardGrad)" stroke="#f0b429" stroke-opacity="0.5"><animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="3.3s" repeatCount="indefinite"/></rect>
+    <text x="1072" y="193" font-size="11" fill="#8b949e">Wishlist items</text>
+    <text x="1072" y="220" font-size="20" font-weight="700" fill="#f0b429">5 saved</text></g>
+</g>
+
+<text x="365" y="275" font-family="Consolas,monospace" font-size="13" fill="#8b949e">Development progress</text>
+<rect x="365" y="283" width="905" height="16" rx="8" fill="#1b222c"/>
+<rect x="365" y="283" width="0" height="16" rx="8" fill="url(#barGrad)">
+  <animate attributeName="width" values="0;833" dur="2.4s" fill="freeze" begin="0.2s"/>
+</rect>
+<text x="1290" y="296" font-family="Consolas,monospace" font-size="13" fill="#e6edf3">92%</text>
+
+<g font-family="Consolas,monospace" font-size="11.5" fill="#c9d1d9">
+  <text x="365" y="325">✔ Natural language parsing</text>
+  <text x="365" y="343">✔ Smart categories</text>
+  <text x="365" y="361">✔ Interactive Telegram UI</text>
+  <text x="620" y="325">✔ Budget tracking</text>
+  <text x="620" y="343">✔ Savings goals</text>
+  <text x="620" y="361">✔ Wishlist</text>
+  <text x="860" y="325">✔ Charts and analytics</text>
+  <text x="860" y="343">✔ Excel export</text>
+  <text x="860" y="361">✔ PDF export</text>
+  <text x="1100" y="325">✔ Daily reminders</text>
+  <text x="1100" y="343">✔ XP and achievements</text>
+  <text x="1100" y="361">✔ Dashboard</text>
+</g>
+
+<rect x="60" y="395" width="1480" height="78" rx="10" fill="#010409" stroke="#21262d"/>
+<circle cx="80" cy="410" r="5" fill="#ff5f56"/>
+<circle cx="97" cy="410" r="5" fill="#ffbd2e"/>
+<circle cx="114" cy="410" r="5" fill="#27c93f"/>
+<g font-family="Consolas,monospace" font-size="11.5" fill="#39d0d8">
+  <text x="75" y="430" opacity="0"><animate attributeName="opacity" values="0;1" begin="0.2s" dur="0.4s" fill="freeze"/>&gt; Starting Telegram bot... Loading SQLite... Registering commands...</text>
+  <text x="75" y="448" opacity="0"><animate attributeName="opacity" values="0;1" begin="1.2s" dur="0.4s" fill="freeze"/>&gt; Loading achievements... Generating charts... Scheduling reminders...</text>
+  <text x="75" y="466" fill="#2ecc71" opacity="0"><animate attributeName="opacity" values="0;1" begin="2.2s" dur="0.4s" fill="freeze"/>&gt; Bot ready.<tspan fill="#2ecc71"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>_</tspan></text>
+</g>
+
+<text x="800" y="490" text-anchor="middle" font-family="Consolas,monospace" font-size="11.5" fill="#6e7681">Built with Python • Telegram Bot API • SQLite • APScheduler • Matplotlib • OpenPyXL • FPDF2</text>
+</svg>
