@@ -36,6 +36,9 @@ def check_achievements(db, user_id):
     return new_achievements
 
 
+
+
+
 def get_achievements_with_status(db, user_id):
     unlocked = {row["name"] for row in db.get_achievements(user_id)}
     result = []
