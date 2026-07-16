@@ -23,6 +23,7 @@ class Database:
                 tags TEXT DEFAULT '',
                 note TEXT DEFAULT ''
             );
+  
 
             CREATE TABLE IF NOT EXISTS budgets (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
